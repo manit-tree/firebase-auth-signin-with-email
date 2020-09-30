@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Auth</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        form > * {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SIGNUP</h1>
+    <form id="frm-login">
+        <label for="email">E-mail</label>
+        <input type="text" id="email">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <label for="display_name">Display Name</label>
+        <input type="text" id="display_name">
+        <button id="btn-signup">SIGNUP</button>
+    </form>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
